@@ -18,18 +18,18 @@ export const Navbar = ({ setPage, page }) => {
                     <a onClick={() => setPage('Skills')}>Skills</a>
                 </li>
                 <li className={`${page == 'Projects' && 'is-active'}`}>
-                    <a onClick={() => setPage('Projects')}>Proyectos</a>
+                    <a onClick={() => setPage('Projects')}>Projects</a>
                 </li>
                 <li className={`${page == 'Contact' && 'is-active'}`}>
-                    <a onClick={() => setPage('Contact')}>Contacto</a>
+                    <a onClick={() => setPage('Contact')}>Contact</a>
                 </li>
                 <li>
                     <a onClick={toggleTheme}>
-                        <span className={`icon ${darkTheme ? 'has-text-dark' : 'has-text-warning'}`}>
+                        <span className={`icon ${darkTheme ? 'has-text-warning' : 'has-text-white'}`}>
                             {darkTheme ?
-                                <i className="bi bi-moon-fill"></i>
-                                :
                                 <i className="bi bi-sun-fill"></i>
+                                :
+                                <i className="bi bi-moon-fill"></i>
                             }
                         </span>
                     </a>
