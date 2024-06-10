@@ -25,11 +25,11 @@ export const Navbar = ({ setPage, page }) => {
                 </li>
                 <li>
                     <a onClick={toggleTheme}>
-                        <span className={`icon ${darkTheme ? 'has-text-warning' : 'has-text-white'}`}>
+                        <span className='icon'>
                             {darkTheme ?
-                                <i className="bi bi-sun-fill"></i>
+                                <i className="bi bi-sun-fill has-text-warning"></i>
                                 :
-                                <i className="bi bi-moon-fill"></i>
+                                <i className="bi bi-moon-fill has-text-info"></i>
                             }
                         </span>
                     </a>
