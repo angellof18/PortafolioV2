@@ -1,0 +1,41 @@
+.avatar{
+    border: 2px solid #d3d3d3;
+}
+
+
+.is-grey {
+    background-color: #d3d3d3;
+}
+
+#img {
+    display: flex;
+    justify-content: center;
+}
+
+.img-project {
+    border-radius: 15px;
+    border: 2px solid #d3d3d3;
+}
+
+.flex-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.flex-item {
+    flex-grow: 1;
+}
+
+.additional-content {
+    margin-top: auto;
+}
+
+.redes {
+    transition: all 0.3s;
+}
+
+.redes:hover {
+    transform: scale(1.2);
+}
