@@ -13,7 +13,7 @@ export const LeftPanel = ({ setPage, page }) => {
         <div className='flex-content'>
             <div className="flex-item">
                 <figure className="image is-128x128 mt-4">
-                    <img className="avatar is-rounded" src="/avatar.png" alt="" />
+                    <img className="avatar is-rounded" src="/avatar.webp" alt="" />
                 </figure>
                 <main className="menu mt-6">
                     <ul className="menu-list">

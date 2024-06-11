@@ -44,8 +44,8 @@ export const About = () => {
                             </div>
                         </div>
                         <div className="column is-hidden-mobile">
-                            <div className={`image ${loading && 'is-skeleton'}`} onLoad={handleImageLoading}>
-                                <img src="/desarrollo-movil.png" alt="" />
+                            <div className={`image is-square ${loading && 'is-skeleton'}`} onLoad={handleImageLoading}>
+                                <img src="/desarrollo-movil.webp" alt="" />
                             </div>
                         </div>
                     </div>
