@@ -22,7 +22,7 @@ export const Skills = () => {
                                         <div className="columns is-centered">
                                             <div id='img' className="column is-one-third">
                                                 <div className={`image is-64x64 has-text-centered ${loading && 'is-skeleton'}`} onLoad={handleImageLoading}>
-                                                    <img src="./icons/html.webp" alt="" />
+                                                    <img src="./icons/html.webp" alt="HTML" />
                                                 </div>
                                             </div>
                                             <div className="column">
@@ -37,7 +37,7 @@ export const Skills = () => {
                                         <div className="columns is-centered">
                                             <div id='img' className="column is-one-third">
                                                 <div className={`image is-64x64 has-text-centered ${loading && 'is-skeleton'}`} onLoad={handleImageLoading}>
-                                                    <img src="./icons/css.webp" alt="" />
+                                                    <img src="./icons/css.webp" alt="CSS" />
                                                 </div>
                                             </div>
                                             <div className="column">
@@ -52,7 +52,7 @@ export const Skills = () => {
                                         <div className="columns is-centered">
                                             <div id='img' className="column is-one-third">
                                                 <div className={`image is-64x64 has-text-centered ${loading && 'is-skeleton'}`} onLoad={handleImageLoading}>
-                                                    <img src="./icons/js.webp" alt="" />
+                                                    <img src="./icons/js.webp" alt="Javascript" />
                                                 </div>
                                             </div>
                                             <div className="column">
@@ -67,7 +67,7 @@ export const Skills = () => {
                                         <div className="columns is-centered">
                                             <div id='img' className="column is-one-third">
                                                 <div className={`image is-64x64 has-text-centered ${loading && 'is-skeleton'}`} onLoad={handleImageLoading}>
-                                                    <img src="./icons/mysql.webp" alt="" />
+                                                    <img src="./icons/mysql.webp" alt="MySQL" />
                                                 </div>
                                             </div>
                                             <div className="column">
@@ -82,7 +82,7 @@ export const Skills = () => {
                                         <div className="columns is-centered">
                                             <div id='img' className="column is-one-third">
                                                 <div className={`image is-64x64 has-text-centered ${loading && 'is-skeleton'}`} onLoad={handleImageLoading}>
-                                                    <img src="./icons/node.webp" alt="" />
+                                                    <img src="./icons/node.webp" alt="Nodejs" />
                                                 </div>
                                             </div>
                                             <div className="column">
@@ -97,7 +97,7 @@ export const Skills = () => {
                                         <div className="columns is-centered">
                                             <div id='img' className="column is-one-third">
                                                 <div className={`image is-64x64 has-text-centered ${loading && 'is-skeleton'}`} onLoad={handleImageLoading}>
-                                                    <img src="./icons/react.webp" alt="" />
+                                                    <img src="./icons/react.webp" alt="React" />
                                                 </div>
                                             </div>
                                             <div className="column">
@@ -112,7 +112,7 @@ export const Skills = () => {
                                         <div className="columns is-centered">
                                             <div id='img' className="column is-one-third">
                                                 <div className={`image is-64x64 has-text-centered ${loading && 'is-skeleton'}`} onLoad={handleImageLoading}>
-                                                    <img src="./icons/github.webp" alt="" />
+                                                    <img src="./icons/github.webp" alt="Github" />
                                                 </div>
                                             </div>
                                             <div className="column">
@@ -127,7 +127,7 @@ export const Skills = () => {
                                         <div className="columns is-centered">
                                             <div id='img' className="column is-one-third">
                                                 <div className={`image is-64x64 has-text-centered ${loading && 'is-skeleton'}`} onLoad={handleImageLoading}>
-                                                    <img src="./icons/python.webp" alt="" />
+                                                    <img src="./icons/python.webp" alt="Python" />
                                                 </div>
                                             </div>
                                             <div className="column">
