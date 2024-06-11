@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export const Signal_clon = () => {
+    const [loading, setLoading] = useState(true)
+
+    const handleImageLoading = () => {
+        setLoading(false)
+    }
+
     return (
         <div className="card">
             <div className="card-header">
@@ -13,9 +19,9 @@ export const Signal_clon = () => {
             </div>
             <div className="card-content">
                 <div className="content">
-                    <figure className="image">
+                    <div className={`image ${loading && 'is-skeleton'}`} onLoad={handleImageLoading}>
                         <img className='img-project' src="/Projects/Signal.png" alt="" />
-                    </figure>
+                    </div>
                     <p className='mt-3'>Plantilla basada en la página web de Signal, desarrollado utilizando principalmente el framework BulmaCSS.</p>
                 </div>
             </div>

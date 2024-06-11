@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { TopPanel } from './TopPanel'
 
 export const Skills = () => {
+    const [loading, setLoading] = useState(true)
+
+    const handleImageLoading = () => {
+        setLoading(false)
+    }
+
     return (
         <>
             <section className="section">
@@ -15,9 +21,9 @@ export const Skills = () => {
                                     <div className="box has-text-centered" data-aos="fade-up">
                                         <div className="columns is-centered">
                                             <div id='img' className="column is-one-third">
-                                                <figure className='image is-64x64'>
+                                                <div className={`image is-64x64 has-text-centered ${loading && 'is-skeleton'}`} onLoad={handleImageLoading}>
                                                     <img src="./icons/html.png" alt="" />
-                                                </figure>
+                                                </div>
                                             </div>
                                             <div className="column">
                                                 <p className='has-text-weight-medium'>HTML</p>
@@ -30,9 +36,9 @@ export const Skills = () => {
                                     <div className="box has-text-centered" data-aos="fade-up">
                                         <div className="columns is-centered">
                                             <div id='img' className="column is-one-third">
-                                                <figure className='image has-text-centered is-64x64'>
+                                                <div className={`image is-64x64 has-text-centered ${loading && 'is-skeleton'}`} onLoad={handleImageLoading}>
                                                     <img src="./icons/css.png" alt="" />
-                                                </figure>
+                                                </div>
                                             </div>
                                             <div className="column">
                                                 <p className='has-text-weight-medium'>CSS</p>
@@ -45,9 +51,9 @@ export const Skills = () => {
                                     <div className="box has-text-centered" data-aos="fade-up">
                                         <div className="columns is-centered">
                                             <div id='img' className="column is-one-third">
-                                                <figure className='image has-text-centered is-64x64'>
+                                                <div className={`image is-64x64 has-text-centered ${loading && 'is-skeleton'}`} onLoad={handleImageLoading}>
                                                     <img src="./icons/js.png" alt="" />
-                                                </figure>
+                                                </div>
                                             </div>
                                             <div className="column">
                                                 <p className='has-text-weight-medium'>Javascript</p>
@@ -60,9 +66,9 @@ export const Skills = () => {
                                     <div className="box has-text-centered" data-aos="fade-up">
                                         <div className="columns is-centered">
                                             <div id='img' className="column is-one-third">
-                                                <figure className='image has-text-centered is-64x64'>
+                                                <div className={`image is-64x64 has-text-centered ${loading && 'is-skeleton'}`} onLoad={handleImageLoading}>
                                                     <img src="./icons/mysql.png" alt="" />
-                                                </figure>
+                                                </div>
                                             </div>
                                             <div className="column">
                                                 <p className='has-text-weight-medium'>MySQL</p>
@@ -75,9 +81,9 @@ export const Skills = () => {
                                     <div className="box has-text-centered" data-aos="fade-up">
                                         <div className="columns is-centered">
                                             <div id='img' className="column is-one-third">
-                                                <figure className='image has-text-centered is-64x64'>
+                                                <div className={`image is-64x64 has-text-centered ${loading && 'is-skeleton'}`} onLoad={handleImageLoading}>
                                                     <img src="./icons/node.png" alt="" />
-                                                </figure>
+                                                </div>
                                             </div>
                                             <div className="column">
                                                 <p className='has-text-weight-medium'>Node JS</p>
@@ -90,9 +96,9 @@ export const Skills = () => {
                                     <div className="box has-text-centered" data-aos="fade-up">
                                         <div className="columns is-centered">
                                             <div id='img' className="column is-one-third">
-                                                <figure className='image has-text-centered is-64x64'>
+                                                <div className={`image is-64x64 has-text-centered ${loading && 'is-skeleton'}`} onLoad={handleImageLoading}>
                                                     <img src="./icons/react.png" alt="" />
-                                                </figure>
+                                                </div>
                                             </div>
                                             <div className="column">
                                                 <p className='has-text-weight-medium'>React</p>
@@ -105,9 +111,9 @@ export const Skills = () => {
                                     <div className="box has-text-centered" data-aos="fade-up">
                                         <div className="columns is-centered">
                                             <div id='img' className="column is-one-third">
-                                                <figure className='image has-text-centered is-64x64'>
+                                                <div className={`image is-64x64 has-text-centered ${loading && 'is-skeleton'}`} onLoad={handleImageLoading}>
                                                     <img src="./icons/github.png" alt="" />
-                                                </figure>
+                                                </div>
                                             </div>
                                             <div className="column">
                                                 <p className='has-text-weight-medium'>Github</p>
@@ -120,9 +126,9 @@ export const Skills = () => {
                                     <div className="box has-text-centered" data-aos="fade-up">
                                         <div className="columns is-centered">
                                             <div id='img' className="column is-one-third">
-                                                <figure className='image has-text-centered is-64x64'>
+                                                <div className={`image is-64x64 has-text-centered ${loading && 'is-skeleton'}`} onLoad={handleImageLoading}>
                                                     <img src="./icons/python.png" alt="" />
-                                                </figure>
+                                                </div>
                                             </div>
                                             <div className="column">
                                                 <p className='has-text-weight-medium'>Python</p>

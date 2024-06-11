@@ -17,7 +17,13 @@ export const LeftPanel = ({ setPage, page }) => {
                 </figure>
                 <main className="menu mt-6">
                     <ul className="menu-list">
-                        <li><a className={`${page == 'About' && 'is-active'}`} href="#" onClick={() => setPage('About')}>Acerca de mí</a></li>
+                        <li><a className={`${page == 'About' && 'is-active'}`} href="#" onClick={() => setPage('About')}>Acerca de mí</a>
+                        <ul>
+                            <li>
+                                <a onClick={() => window.open('/cv.pdf', '_blank')}>Descargar CV</a>
+                            </li>
+                        </ul>
+                        </li>
                         <li><a className={`${page == 'Projects' && 'is-active'}`} href="#" onClick={() => setPage('Projects')}>Proyectos</a></li>
                         <li><a className={`${page == 'Skills' && 'is-active'}`} href="#" onClick={() => setPage('Skills')}>Habilidades</a></li>
                         <li><a className={`${page == 'Contact' && 'is-active'}`} href="#" onClick={() => setPage('Contact')}>Contacto</a></li>
@@ -29,9 +35,9 @@ export const LeftPanel = ({ setPage, page }) => {
                     onClick={toggleTheme}>
                     <span className="icon is-small">
                         {darkTheme ?
-                            <i className="bi bi-sun"></i>
+                            <i className="bi bi-sun-fill"></i>
                             :
-                            <i className="bi bi-moon"></i>
+                            <i className="bi bi-moon-fill"></i>
                         }
 
                     </span>

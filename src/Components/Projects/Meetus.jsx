@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export const Meetus = () => {
+    const [loading, setLoading] = useState(true)
+
+    const handleImageLoading = () => {
+        setLoading(false)
+    }
+
     return (
         <div className="card">
             <div className="card-header">
@@ -15,9 +21,9 @@ export const Meetus = () => {
             </div>
             <div className="card-content">
                 <div className="content">
-                    <figure className="image">
+                    <div className={`image ${loading && 'is-skeleton'}`} onLoad={handleImageLoading}>
                         <img className='img-project' src="/Projects/Meetus.png" alt="" />
-                    </figure>
+                    </div>
                     <p className='mt-3'>"Meetus" es una aplicación de chat web que utiliza Socket.io para facilitar la comunicación en tiempo real.</p>
                 </div>
             </div>
