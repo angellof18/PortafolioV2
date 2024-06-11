@@ -1,7 +1,7 @@
 import React from 'react'
 import { TopPanel } from './TopPanel'
 
-export const Contact = () => {
+export const Contact = ({darkTheme}) => {
     return (
         <section className="section">
             <div className="columns">
@@ -40,7 +40,7 @@ export const Contact = () => {
 
                         <div className="field">
                             <div className="control">
-                                <button type='submit' className="button is-outlined is-link">
+                                <button type='submit' className="button is-link is-light">
                                     <span className="icon">
                                         <i className="bi bi-send-fill"></i>
                                     </span>
@@ -51,6 +51,21 @@ export const Contact = () => {
 
                         <input type="hidden" name='_captcha' value={'false'} />
                     </form>
+                    <div className="field mt-6">
+                        <label className="label">Trabajemos juntos</label>
+                        <div className="control">
+                            <div class="field has-addons">
+                                <p class="control">
+                                    <input class="input" type="text" value="arteaga.angel.1720" disabled />
+                                </p>
+                                <p class="control">
+                                    <a class="button is-static">
+                                        @hotmail.com
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
