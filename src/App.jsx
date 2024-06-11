@@ -17,15 +17,21 @@ function App() {
     if (initialTheme === 'dark') {
       setDarkTheme(true);
       document.documentElement.classList.add('theme-dark');
+      document.documentElement.classList.remove('theme-light');
     } else {
+      setDarkTheme(false);
+      document.documentElement.classList.add('theme-light');
       document.documentElement.classList.remove('theme-dark');
     }
   }, []);
 
   const toggleTheme = () => {
+    const newTheme = !darkTheme ? 'theme-dark' : 'theme-light';
     setDarkTheme(!darkTheme);
     document.documentElement.classList.toggle('theme-dark');
+    document.documentElement.classList.toggle('theme-light');
   };
+
 
   const renderPage = () => {
     switch (page) {
@@ -39,7 +45,7 @@ function App() {
         return <Projects />
 
       case 'Contact':
-        return <Contact darkTheme={darkTheme}/>
+        return <Contact darkTheme={darkTheme} />
 
       default:
         return <p>Acerca de mi</p>;
@@ -51,7 +57,7 @@ function App() {
       <Navbar setPage={setPage} page={page} />
       <div className="dashboard is-full-height">
         <aside id='is-vcentered.' className="dashboard-panel has-thick-padding is-small is-hidden-mobile">
-          <LeftPanel setPage={setPage} page={page} toggleTheme={toggleTheme} darkTheme={darkTheme}/>
+          <LeftPanel setPage={setPage} page={page} toggleTheme={toggleTheme} darkTheme={darkTheme} />
         </aside>
 
         <main className="dashboard-main is-scrollable">
