@@ -8,7 +8,7 @@ export const Contact = () => {
                 <div className="column is-12">
                     <TopPanel titulo={'Contacto'} />
                     <br />
-                    <form action="https://formsubmit.co/5782711d06bfc79dab966069f374f92c" method='POST' className="form">
+                    <form action="https://formsubmit.co/arteaga.angel.1720@hotmail.com" method='POST' className="form">
                         <div className="field">
                             <label className="label">Nombre</label>
                             <p className="control has-icons-left">
