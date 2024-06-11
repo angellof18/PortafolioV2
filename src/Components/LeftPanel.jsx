@@ -12,7 +12,7 @@ export const LeftPanel = ({ setPage, page }) => {
     return (
         <div className='flex-content'>
             <div className="flex-item">
-                <figure className="image is-128x128">
+                <figure className="image is-128x128 mt-4">
                     <img className="avatar is-rounded" src="/avatar.png" alt="" />
                 </figure>
                 <main className="menu mt-6">

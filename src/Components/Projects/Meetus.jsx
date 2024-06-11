@@ -21,7 +21,7 @@ export const Meetus = () => {
             </div>
             <div className="card-content">
                 <div className="content">
-                    <div className={`image ${loading && 'is-skeleton'}`} onLoad={handleImageLoading}>
+                    <div className={`image is-16by9 ${loading && 'is-skeleton'}`} onLoad={handleImageLoading}>
                         <img className='img-project' src="/Projects/Meetus.png" alt="" />
                     </div>
                     <p className='mt-3'>"Meetus" es una aplicación de chat web que utiliza Socket.io para facilitar la comunicación en tiempo real.</p>

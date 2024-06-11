@@ -19,7 +19,7 @@ export const Signal_clon = () => {
             </div>
             <div className="card-content">
                 <div className="content">
-                    <div className={`image ${loading && 'is-skeleton'}`} onLoad={handleImageLoading}>
+                    <div className={`image is-16by9 ${loading && 'is-skeleton'}`} onLoad={handleImageLoading}>
                         <img className='img-project' src="/Projects/Signal.png" alt="" />
                     </div>
                     <p className='mt-3'>Plantilla basada en la página web de Signal, desarrollado utilizando principalmente el framework BulmaCSS.</p>
