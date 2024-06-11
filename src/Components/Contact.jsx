@@ -1,7 +1,7 @@
 import React from 'react'
 import { TopPanel } from './TopPanel'
 
-export const Contact = ({darkTheme}) => {
+export const Contact = ({ darkTheme }) => {
     return (
         <section className="section">
             <div className="columns">
@@ -40,7 +40,7 @@ export const Contact = ({darkTheme}) => {
 
                         <div className="field">
                             <div className="control">
-                                <button type='submit' className="button is-link is-light">
+                                <button type='submit' className={`button is-link ${darkTheme ? 'is-dark' : 'is-light'}`}>
                                     <span className="icon">
                                         <i className="bi bi-send-fill"></i>
                                     </span>
