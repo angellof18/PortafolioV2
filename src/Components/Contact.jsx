@@ -8,11 +8,11 @@ export const Contact = () => {
                 <div className="column is-12">
                     <TopPanel titulo={'Contacto'} />
                     <br />
-                    <form action="https://formsubmit.co/arteaga.angel.1720@hotmail.com" method='POST' className="form">
+                    <form action="https://formspree.io/f/xdoqqajk" method='POST' className="form">
                         <div className="field">
                             <label className="label">Nombre</label>
                             <p className="control has-icons-left">
-                                <input type="text" className="input" name='name' required />
+                                <input type="text" className="input" name='Name' required />
                                 <span className="icon is-small is-left">
                                     <i className="bi bi-people-fill"></i>
                                 </span>
@@ -23,7 +23,7 @@ export const Contact = () => {
                         <div className="field">
                             <label className="label">Correo</label>
                             <p className="control has-icons-left">
-                                <input type="email" placeholder='Correo' className="input" name='email' required />
+                                <input type="email" placeholder='Correo' className="input" name='Email' required />
                                 <span className="icon is-small is-left">
                                     <i className="bi bi-at"></i>
                                 </span>
@@ -32,20 +32,9 @@ export const Contact = () => {
                         </div>
 
                         <div className="field">
-                            <label className="label">Asunto</label>
-                            <p className="control has-icons-left">
-                                <input type="text" placeholder='Asunto' className="input" name='subject' required />
-                                <span className="icon is-small is-left">
-                                    <i className="bi bi-bookmark-fill"></i>
-                                </span>
-                                <p className="help">Asunto del correo</p>
-                            </p>
-                        </div>
-
-                        <div className="field">
                             <label className="label">Descripcion</label>
                             <div className="control">
-                                <textarea className='textarea' placeholder='Mensaje' name='comments' required></textarea>
+                                <textarea className='textarea' placeholder='Mensaje' name='Message' required></textarea>
                             </div>
                         </div>
 
