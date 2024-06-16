@@ -2,12 +2,6 @@ import React, { useState } from 'react'
 
 export const Navbar = ({ setPage, page, text_title }) => {
     const [active, setActive] = useState(false)
-    const [darkTheme, setDarkTheme] = useState(false)
-
-    const toggleTheme = () => {
-        setDarkTheme(!darkTheme)
-        document.documentElement.classList.toggle('theme-dark')
-    }
 
     const toggleActive = () => {
         setActive(!active)

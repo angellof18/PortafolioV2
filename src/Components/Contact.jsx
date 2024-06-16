@@ -2,7 +2,7 @@ import React from 'react'
 import { TopPanel } from './TopPanel'
 import { Navbar } from './Navbar'
 
-export const Contact = ({ darkTheme }) => {
+export const Contact = () => {
     return (
         <>
             <section className="mx-5">

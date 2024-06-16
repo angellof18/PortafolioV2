@@ -9,29 +9,6 @@ import { Contact } from './Components/Contact'
 
 function App() {
   const [page, setPage] = useState('About')
-  const [darkTheme, setDarkTheme] = useState(false);
-
-  useEffect(() => {
-    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const initialTheme = prefersDarkScheme ? 'dark' : 'light';
-    if (initialTheme === 'dark') {
-      setDarkTheme(true);
-      document.documentElement.classList.add('theme-dark');
-      document.documentElement.classList.remove('theme-light');
-    } else {
-      setDarkTheme(false);
-      document.documentElement.classList.add('theme-light');
-      document.documentElement.classList.remove('theme-dark');
-    }
-  }, []);
-
-  const toggleTheme = () => {
-    const newTheme = !darkTheme ? 'theme-dark' : 'theme-light';
-    setDarkTheme(!darkTheme);
-    document.documentElement.classList.toggle('theme-dark');
-    document.documentElement.classList.toggle('theme-light');
-  };
-
 
   const renderPage = () => {
     switch (page) {
@@ -56,7 +33,7 @@ function App() {
       case 'Contact':
         return <>
           <Navbar page={page} setPage={setPage} text_title={'Contacto'} />
-          <Contact darkTheme={darkTheme} />
+          <Contact />
         </>
 
       default:
@@ -68,7 +45,7 @@ function App() {
     <>
       <div className="dashboard is-full-height">
         <aside id='is-vcentered.' className="dashboard-panel has-thick-padding is-small is-hidden-mobile">
-          <LeftPanel setPage={setPage} page={page} toggleTheme={toggleTheme} darkTheme={darkTheme} />
+          <LeftPanel setPage={setPage} page={page} />
         </aside>
 
         <main className="dashboard-main is-scrollable">
