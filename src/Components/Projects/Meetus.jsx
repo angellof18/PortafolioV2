@@ -24,18 +24,18 @@ export const Meetus = () => {
                     <div className={`image is-16by9 ${loading && 'is-skeleton'}`} onLoad={handleImageLoading}>
                         <img className='img-project' src="/Projects/Meetus.webp" alt="Ptoyecto Socket.io" />
                     </div>
-                    <p className='mt-3'>"Meetus" es una aplicación de chat web que utiliza Socket.io para facilitar la comunicación en tiempo real.</p>
+                    <div className='mt-3'>"Meetus" es una aplicación de chat web que utiliza Socket.io para facilitar la comunicación en tiempo real.</div>
                 </div>
             </div>
             <div className="card-footer">
                 <a href="https://meetus-d2da.onrender.com/" target='_blank' className="card-footer-item">
-                    <span icon>
+                    <span className='icon'>
                         <i className="bi bi-globe" />
                     </span>
                     <span className='ml-2'>Demo</span>
                 </a>
                 <a href="https://github.com/angellof18/Meetus" target='_blank' className="card-footer-item">
-                    <span icon>
+                    <span className='icon'>
                         <i className="bi bi-git" />
                     </span>
                     <span className='ml-2'>GitHub</span>

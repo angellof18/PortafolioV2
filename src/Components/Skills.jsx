@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { TopPanel } from './TopPanel'
+import { Navbar } from './Navbar'
 
 export const Skills = () => {
     const [loading, setLoading] = useState(true)
@@ -10,7 +11,7 @@ export const Skills = () => {
 
     return (
         <>
-            <section className="section">
+            <section className="mx-5">
                 <div className="columns is-centered">
                     <div className="column is-12">
                         <TopPanel titulo={'Habilidades'} />

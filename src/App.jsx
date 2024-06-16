@@ -36,16 +36,28 @@ function App() {
   const renderPage = () => {
     switch (page) {
       case 'About':
-        return <About />
+        return <>
+          <Navbar page={page} setPage={setPage} text_title={'Acerca de mí'} />
+          <About />
+        </>
 
       case 'Skills':
-        return <Skills />
+        return <>
+          <Navbar page={page} setPage={setPage} text_title={'Habilidades'} />
+          <Skills />
+        </>
 
       case 'Projects':
-        return <Projects />
+        return <>
+          <Navbar page={page} setPage={setPage} text_title={'Proyectos'} />
+          <Projects />
+        </>
 
       case 'Contact':
-        return <Contact darkTheme={darkTheme} />
+        return <>
+          <Navbar page={page} setPage={setPage} text_title={'Contacto'} />
+          <Contact darkTheme={darkTheme} />
+        </>
 
       default:
         return <p>Acerca de mi</p>;
@@ -54,7 +66,6 @@ function App() {
 
   return (
     <>
-      <Navbar setPage={setPage} page={page} />
       <div className="dashboard is-full-height">
         <aside id='is-vcentered.' className="dashboard-panel has-thick-padding is-small is-hidden-mobile">
           <LeftPanel setPage={setPage} page={page} toggleTheme={toggleTheme} darkTheme={darkTheme} />

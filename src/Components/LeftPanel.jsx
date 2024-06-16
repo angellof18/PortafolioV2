@@ -17,13 +17,7 @@ export const LeftPanel = ({ setPage, page, toggleTheme, darkTheme }) => {
                 </figure>
                 <main className="menu mt-6">
                     <ul className="menu-list">
-                        <li><a className={`${page == 'About' && 'is-active'}`} href="#" onClick={() => setPage('About')}>Acerca de mí</a>
-                            <ul>
-                                <li>
-                                    <a onClick={() => window.open('/cv.pdf', '_blank')}>Descargar CV</a>
-                                </li>
-                            </ul>
-                        </li>
+                        <li><a className={`${page == 'About' && 'is-active'}`} href="#" onClick={() => setPage('About')}>Acerca de mí</a></li>
                         <li><a className={`${page == 'Projects' && 'is-active'}`} href="#" onClick={() => setPage('Projects')}>Proyectos</a></li>
                         <li><a className={`${page == 'Skills' && 'is-active'}`} href="#" onClick={() => setPage('Skills')}>Habilidades</a></li>
                         <li><a className={`${page == 'Contact' && 'is-active'}`} href="#" onClick={() => setPage('Contact')}>Contacto</a></li>
@@ -31,18 +25,14 @@ export const LeftPanel = ({ setPage, page, toggleTheme, darkTheme }) => {
                 </main>
             </div>
             <div className="additional-content">
-                <button className={`button is-rounded ${darkTheme ? 'is-warning' : 'is-dark'}`}
-                    onClick={toggleTheme}>
-                    <span className="icon is-small">
-                        {darkTheme ?
-                            <i className="bi bi-sun-fill"></i>
-                            :
-                            <i className="bi bi-moon-fill"></i>
-                        }
-
-                    </span>
-                    <span>{darkTheme ? 'Tema claro' : 'Tema oscuro'}</span>
-                </button>
+                <div className="buttons">
+                    <button className="button is-link is-light" onClick={() => window.open('/cv.pdf', '_blank')}>
+                        <span className="icon-is-small">
+                            <i className="bi bi-download"></i>
+                        </span>
+                        <span className='ml-2'>Descargar CV</span>
+                    </button>
+                </div>
             </div>
         </div>
     )
