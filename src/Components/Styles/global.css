@@ -39,3 +39,12 @@
 .redes:hover {
     transform: scale(1.05);
 }
+
+.padding-x {
+    padding: 15px 50px !important;
+}
+
+#hero {
+    border-radius: 10px !important;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.05);
+}

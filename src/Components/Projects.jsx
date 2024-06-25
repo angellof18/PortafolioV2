@@ -4,11 +4,12 @@ import { Signal_clon } from './Projects/Signal_clon'
 import { TopPanel } from './TopPanel'
 import { Navbar } from './Navbar'
 import { Login } from './Projects/Login'
+import { Portafolio } from './Projects/Portafolio'
 
 export const Projects = () => {
     return (
         <>
-            <section className='mx-5'>
+            <section className='mx-5 mb-6'>
                 <div className="columns is-centered">
                     <div className="column is-12">
                         <TopPanel titulo={'Proyectos'} />
@@ -23,6 +24,9 @@ export const Projects = () => {
                                 </div>
                                 <div className="cell">
                                     <Login />
+                                </div>
+                                <div className="cell">
+                                    <Portafolio />
                                 </div>
                             </div>
                         </div>

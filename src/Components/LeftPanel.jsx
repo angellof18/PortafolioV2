@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { Footer } from './Footer'
+import styles from '../Components/Styles/style.module.css'
 
-export const LeftPanel = ({ setPage, page}) => {
+export const LeftPanel = ({ setPage, page }) => {
 
     return (
         <div className='flex-content'>
@@ -11,10 +12,10 @@ export const LeftPanel = ({ setPage, page}) => {
                 </figure>
                 <main className="menu mt-6">
                     <ul className="menu-list">
-                        <li><a className={`${page == 'About' && 'is-active'}`} onClick={() => setPage('About')}>Acerca de mí</a></li>
-                        <li><a className={`${page == 'Projects' && 'is-active'}`} onClick={() => setPage('Projects')}>Proyectos</a></li>
-                        <li><a className={`${page == 'Skills' && 'is-active'}`} onClick={() => setPage('Skills')}>Habilidades</a></li>
-                        <li><a className={`${page == 'Contact' && 'is-active'}`} onClick={() => setPage('Contact')}>Contacto</a></li>
+                        <li><a className={`${page == 'About' && 'is-active' && styles.active}`} onClick={() => setPage('About')}>Acerca de mí</a></li>
+                        <li><a className={`${page == 'Projects' && 'is-active' && styles.active}`} onClick={() => setPage('Projects')}>Proyectos</a></li>
+                        <li><a className={`${page == 'Skills' && 'is-active' && styles.active}`} onClick={() => setPage('Skills')}>Habilidades</a></li>
+                        <li><a className={`${page == 'Contact' && 'is-active' && styles.active}`} onClick={() => setPage('Contact')}>Contacto</a></li>
                     </ul>
                 </main>
             </div>
