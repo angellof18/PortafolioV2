@@ -32,19 +32,33 @@ export const About = () => {
                                 <p>He participado en proyectos académicos que involucran bases de datos relacionales como MySQL y MariaDB, así como en el análisis de datos con Python. Además, tengo experiencia en el desarrollo de páginas web utilizando frameworks como Bootstrap y BulmaCSS."</p>
 
                                 <div className="buttons mt-6">
-                                    <a href="https://github.com/angellof18" target='_blank' className="button is-dark">
+                                    <a href="https://github.com/angellof18" target='_blank' className="button is-link">
                                         <i className="bi bi-github"></i>
                                         <span className="ml-2">GitHub</span>
                                     </a>
-                                    <a href="mailto:arteaga.angel.1720@hotmail.com" className="button is-dark is-outlined">
+                                    <a href="mailto:arteaga.angel.1720@hotmail.com" className="button is-link is-outlined">
                                         <i className="bi bi-envelope-fill"></i>
                                         <span className="ml-3">Correo</span>
                                     </a>
                                 </div>
                             </div>
-                            <div className="column is-hidden-mobile">
-                                <div className={`image is-square ${loading && 'is-skeleton'}`} onLoad={handleImageLoading}>
-                                    <img src="/desarrollo-movil.webp" alt="" />
+                            <div className="column">
+                                <div className="box">
+                                    <p className="is-size-4 has-text-weight-medium">HABILIDADES</p>
+                                    <div className="list">
+                                        <div className="list-item">
+                                            <div className="list-item-content">Disponibilidad</div>
+                                        </div>
+                                        <div className="list-item">
+                                            <div className="list-item-content">Autodidacta</div>
+                                        </div>
+                                        <div className="list-item">
+                                            <div className="list-item-content">Responsable</div>
+                                        </div>
+                                        <div className="list-item">
+                                            <div className="list-item-content">Trabajo en equipo</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

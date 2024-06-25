@@ -20,7 +20,7 @@ export const LeftPanel = ({ setPage, page}) => {
             </div>
             <div className="additional-content">
                 <div className="buttons">
-                    <button className="button is-link is-light" onClick={() => window.open('/cv.pdf', '_blank')}>
+                    <button className="button is-light" onClick={() => window.open('/cv.pdf', '_blank')}>
                         <span className="icon-is-small">
                             <i className="bi bi-download"></i>
                         </span>

@@ -3,6 +3,7 @@ import { Meetus } from './Projects/Meetus'
 import { Signal_clon } from './Projects/Signal_clon'
 import { TopPanel } from './TopPanel'
 import { Navbar } from './Navbar'
+import { Login } from './Projects/Login'
 
 export const Projects = () => {
     return (
@@ -19,6 +20,9 @@ export const Projects = () => {
                                 </div>
                                 <div className="cell">
                                     <Signal_clon />
+                                </div>
+                                <div className="cell">
+                                    <Login />
                                 </div>
                             </div>
                         </div>

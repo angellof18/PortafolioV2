@@ -42,7 +42,7 @@ export const Contact = () => {
 
                             <div className="field">
                                 <div className="control">
-                                    <button type='submit' className='button is-dark'>
+                                    <button type='submit' className='button is-link'>
                                         <span className="icon">
                                             <i className="bi bi-send-fill"></i>
                                         </span>

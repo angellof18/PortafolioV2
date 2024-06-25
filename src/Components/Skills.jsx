@@ -11,7 +11,7 @@ export const Skills = () => {
 
     return (
         <>
-            <section className="mx-5">
+            <section className="mx-5 mb-5">
                 <div className="columns is-centered">
                     <div className="column is-12">
                         <TopPanel titulo={'Habilidades'} />
@@ -133,6 +133,21 @@ export const Skills = () => {
                                             </div>
                                             <div className="column">
                                                 <p className='has-text-weight-medium'>Python</p>
+                                                <span className="tag is-small is-success is-rounded">Principiante</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="cell">
+                                    <div className="box has-text-centered" data-aos="fade-up">
+                                        <div className="columns is-centered">
+                                            <div id='img' className="column is-one-third">
+                                                <div className={`image is-64x64 has-text-centered ${loading && 'is-skeleton'}`} onLoad={handleImageLoading}>
+                                                    <img src="./icons/next.webp" alt="NextJS" />
+                                                </div>
+                                            </div>
+                                            <div className="column">
+                                                <p className='has-text-weight-medium'>Next.js</p>
                                                 <span className="tag is-small is-success is-rounded">Principiante</span>
                                             </div>
                                         </div>
