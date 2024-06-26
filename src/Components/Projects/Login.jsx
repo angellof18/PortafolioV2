@@ -20,7 +20,7 @@ export const Login = () => {
                     <span className="tag is-dark">CSS</span>
                 </div>
                 <figure className="image is-16by9">
-                    <img className='img-project' src="/Projects/Meetus.webp" alt="" />
+                    <img className='img-project' src="/Projects/Login.webp" alt="" />
                 </figure>
                 <p className='mt-3'>Login con variables de sesión y validación de datos.</p>
             </div>
