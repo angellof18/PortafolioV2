@@ -1,11 +1,10 @@
 import React from 'react'
 import { TopPanel } from './TopPanel'
-import { Navbar } from './Navbar'
 
 export const Contact = () => {
     return (
         <>
-            <section className="mx-5">
+            <section className="mx-5 my-5">
                 <div className="columns">
                     <div className="column is-12">
                         <TopPanel titulo={'Contacto'} />
@@ -42,7 +41,7 @@ export const Contact = () => {
 
                             <div className="field">
                                 <div className="control">
-                                    <button type='submit' className='button is-link'>
+                                    <button type='submit' className='button is-black'>
                                         <span className="icon">
                                             <i className="bi bi-send-fill"></i>
                                         </span>
@@ -54,7 +53,7 @@ export const Contact = () => {
                             <input type="hidden" name='_captcha' value={'false'} />
                         </form>
                         <div className="field mt-6">
-                            <label className="label">Trabajemos juntos</label>
+                            <label className="label has-text-weight-medium is-size-6">TRABAJEMOS JUNTOS</label>
                             <div className="control">
                                 <div className="field has-addons">
                                     <p className="control">

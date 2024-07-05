@@ -9,20 +9,20 @@ const ProjectInfo = () => {
         web: 'https://login-nextjs-pi.vercel.app/login'
     },
     {
-        title: 'Meetus - Chat con Socket.io',
-        description: "Meetus es una aplicación de chat web que utiliza Socket.io para facilitar la comunicación en tiempo real.",
-        image: '/Projects/Meetus.webp',
-        tags: ['React', 'MySQL', 'Socket.io', 'BulmaCSS'],
-        repo: 'https://github.com/angellof18/Meetus',
-        web: 'https://meetus-d2da.onrender.com/'
-    },
-    {
         title: 'Portafolio - Mi portafolio personal',
         description: "Portafolio personal con mis proyectos elaborados.",
         image: '/Projects/Portafolio.webp',
         tags: ['React', 'HTML', 'CSS', 'BulmaCSS'],
         repo: 'https://github.com/angellof18/PortafolioV2',
         web: 'https://portafolio-arteaga.onrender.com/'
+    },
+    {
+        title: 'Meetus - Chat con Socket.io',
+        description: "Meetus es una aplicación de chat web que utiliza Socket.io para facilitar la comunicación en tiempo real.",
+        image: '/Projects/Meetus.webp',
+        tags: ['React', 'MySQL', 'Socket.io', 'BulmaCSS'],
+        repo: 'https://github.com/angellof18/Meetus',
+        web: 'https://meetus-d2da.onrender.com/'
     },
     {
         title: 'Signal (clon) - Plantilla basada en Web de Signal',

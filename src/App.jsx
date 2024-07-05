@@ -1,11 +1,12 @@
-import { useEffect, useState } from 'react'
-import { LeftPanel } from './Components/LeftPanel'
-import { Navbar } from './Components/Navbar'
+import { useState } from 'react'
+import { LeftPanel } from './Components/Mobile/LeftPanel'
+import { Navbar } from './Components/Mobile/Navbar'
 import { Skills } from './Components/Skills'
 import './Components/Styles/global.css'
 import { Projects } from './Components/Projects'
 import { About } from './Components/About'
 import { Contact } from './Components/Contact'
+import style from './Components/Styles/style.module.css'
 
 function App() {
   const [page, setPage] = useState('About')
@@ -14,25 +15,25 @@ function App() {
     switch (page) {
       case 'About':
         return <>
-          <Navbar page={page} setPage={setPage} text_title={'Acerca de mí'} />
+          <Navbar page={page} setPage={setPage} />
           <About />
         </>
 
       case 'Skills':
         return <>
-          <Navbar page={page} setPage={setPage} text_title={'Habilidades'} />
+          <Navbar page={page} setPage={setPage} />
           <Skills />
         </>
 
       case 'Projects':
         return <>
-          <Navbar page={page} setPage={setPage} text_title={'Proyectos'} />
+          <Navbar page={page} setPage={setPage} />
           <Projects />
         </>
 
       case 'Contact':
         return <>
-          <Navbar page={page} setPage={setPage} text_title={'Contacto'} />
+          <Navbar page={page} setPage={setPage} />
           <Contact />
         </>
 
@@ -44,7 +45,7 @@ function App() {
   return (
     <>
       <div className="dashboard is-full-height">
-        <aside id='is-vcentered.' className="dashboard-panel has-thick-padding is-small is-hidden-mobile">
+        <aside id='is-vcentered.' className={`dashboard-panel has-thick-padding is-small is-hidden-mobile ${style.side}`}>
           <LeftPanel setPage={setPage} page={page} />
         </aside>
 
